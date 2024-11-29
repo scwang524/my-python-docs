@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Step-by-step Teaching Materials',
-  tagline: 'Project RZ/G2L',
+  tagline: 'Renesas RZ/G2L',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

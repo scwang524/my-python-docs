@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile COBOL",
+            "type": "shell",
+            "command": "cobc",
+            "args": [
+                "-x",           // 生成可执行文件
+                "*.cob"         // 使用通配符匹配所有 .cob 文件
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile all COBOL files"
+        },
+        {
+            "label": "Run COBOL",
+            "type": "shell",
+            "command": "./program_name",  // 生成的可执行文件名
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "detail": "Run COBOL program"
+        }
+    ]
+}
