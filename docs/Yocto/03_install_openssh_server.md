@@ -19,11 +19,11 @@ id_ed25519.pub：公鑰文件（public key）身份驗證，這是可以公開�
 -C 用來為密鑰對提供一個注釋（comment）。這個注釋通常用來幫助識別這個密鑰對的用途或所有者。
 ```
 
-![](./img/03_01.png)
+![](../img/03_01.png)
 
 ### Log into GitHub > Settings > SSH and GPG keys > New SSH key:
 
-![](./img/03_02.png)
+![](../img/03_02.png)
 
 # （Ubuntu）N200 PC
 
@@ -34,7 +34,7 @@ Install OpenSSH Server
 ```
 sudo apt install openssh-server
 ```
-![](./img/03_03.png)
+![](../img/03_03.png)
 
 ```bash
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.original  # 備份原本
