@@ -81,7 +81,7 @@ sudo systemctl try-reload-or-restart ssh
 這個命令是用來重新加載或重啟 SSH 服務（通常是指 sshd 服務）的命令。
 ```
 
-import ssh key from github:
+`import` ssh key from github:
 
 ```bash
 ssh-import-id-gh <github-username>
