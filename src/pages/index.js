@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Tutorial of Renesas RZ/G2L ⏱️
+            Renesas RZ/G2L Tutorial⏱️
           </Link>
         </div>
       </div>

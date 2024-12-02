@@ -56,7 +56,7 @@ lsb_release -a
 mkdir work
 cd work
 wget http://192.168.113.104/rz/orig/rzg/rzg.tar.gz
-tar zxvf rzg.tar.gz**
+tar zxvf rzg.tar.gz
 
 # Without this setting, an error occurs when **building procedure runs git command to apply patches
 git config --global --list
