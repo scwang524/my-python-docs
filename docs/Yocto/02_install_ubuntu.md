@@ -3,10 +3,10 @@ sidebar_position: 3
 ---
 
 # Install Ubuntu in N200 PC
-Insert the bootable USB stick into N200 PC before turning on. Then start N200 PC in BIOS mode (**F2** or **F9** or **F10** or **delete** button).
+Insert the bootable USB stick into N200 PC before restarting. Then restart N200 PC in **BIOS mode (press "delete" button)**.
 
 Follow steps as below:
-
+![](../img/02_00.jpg)
 ![](../img/02_01.png)
 ![](../img/02_02.png)
 ![](../img/02_03.png)
