@@ -31,12 +31,9 @@ ssh-keygen -t ed25519 -C "renesas-ssh-key"
 
 # （Ubuntu）N200 PC
 
-[OpenSSH server](https://documentation.ubuntu.com/server/how-to/security/openssh-server/)
-[OpenSSH server](https://documentation.ubuntu.com/server/how-to/security/openssh-server/)
-
 **Install OpenSSH Server**
 
-```
+```bash
 sudo apt install openssh-server
 ```
 
@@ -49,7 +46,7 @@ sudo chmod a-w /etc/ssh/sshd_config.original  # 對所有使用者取消該文�
 
 **Configure the SSH server**
 
-```
+```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
