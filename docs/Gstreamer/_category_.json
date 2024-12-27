@@ -2,6 +2,7 @@
   "label": "Gstreamer",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Install Gstreamer > Yocto Compilation > Edit Recipes > Gstreamer Tests"
   }
 }
