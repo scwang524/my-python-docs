@@ -44,7 +44,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 **`chmod`**: command used to change file or directory permissions. It allows users to set read, write, and execute permissions for files or directories.
     
-*`a+r`**: This is the permission setting option in the chmod command, which stands for:
+**`a+r`**: This is the permission setting option in the chmod command, which stands for:
              a stands for "all", which includes the file's owner, group users, and other users.
     
 **`+r`** means adding read permission to the specified file or directory. This means that all users will be able to read the file, but not necessarily modify or execute it.
