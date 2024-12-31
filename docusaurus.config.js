@@ -169,4 +169,5 @@ const config = {
 export default  {
   markdown: {
     format: 'detect',
-}
+  },
+};
