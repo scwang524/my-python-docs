@@ -25,24 +25,29 @@ sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 ```
 
-curl: used to download or transfer data from the Internet. It can support multiple protocols (such as HTTP, HTTPS, FTP, etc.) and can be used in conjunction with other commands.
+**`curl`**: used to download or transfer data from the Internet. It can support multiple protocols (such as HTTP, HTTPS, FTP, etc.) and can be used in conjunction with other commands.
 -fsSL: These are curl options, which stand for:
+
     -f: If the downloaded resource cannot be successfully obtained (for example, a web page 404 or 500 error), curl will stop and return an error.
     -s: Tells curl to run without displaying any progress or error messages (i.e., run in silent mode).
     -S: Used together with -s, it allows error messages to be displayed, so that even if silent mode is used, error messages can be displayed when errors occur.
     -L: If the resource requested by curl is redirected, this option tells curl to follow the redirect and continue downloading.
 https://download.docker.com/linux/ubuntu/gpg: This is the URL of the file that curl will download. This URL points to the GPG key provided on the official Docker website, which is used to verify the origin and integrity of the Docker package.
--o: This option tells curl to save the downloaded file to the specified path. Here -o is followed by the path where the file is saved.
-/etc/apt/keyrings/docker.asc: This is the path where the downloaded GPG key is saved. docker.asc is the name of the downloaded GPG key file and is saved in the /etc/apt/keyrings directory. This directory is commonly used to store keys for the APT packaging management system.
+
+**`-o`**: This option tells curl to save the downloaded file to the specified path. Here -o is followed by the path where the file is saved.
+
+**`/etc/apt/keyrings/docker.asc`**: This is the path where the downloaded GPG key is saved. docker.asc is the name of the downloaded GPG key file and is saved in the /etc/apt/keyrings directory. This directory is commonly used to store keys for the APT packaging management system.
 
 ```bash
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
 
-chmod: command used to change file or directory permissions. It allows users to set read, write, and execute permissions for files or directories.
-    a+r: This is the permission setting option in the chmod command, which stands for:
+**`chmod`**: command used to change file or directory permissions. It allows users to set read, write, and execute permissions for files or directories.
+    
+*`a+r`**: This is the permission setting option in the chmod command, which stands for:
              a stands for "all", which includes the file's owner, group users, and other users.
-    +r means adding read permission to the specified file or directory. This means that all users will be able to read the file, but not necessarily modify or execute it.
+    
+**`+r`** means adding read permission to the specified file or directory. This means that all users will be able to read the file, but not necessarily modify or execute it.
 
 Add the repository to Apt sources:
 
@@ -77,13 +82,16 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
     sudo usermod -aG docker $USER
     ```
     
-    usermod: command to modify system users. It allows modifying multiple properties of a user account, such as group, home directory, username, etc.
+    **`usermod`**: command to modify system users. It allows modifying multiple properties of a user account, such as group, home directory, username, etc.
 
-        -aG:
-            -a: This option is short for "append", which means adding the user to the specified group without removing the user from other groups. Without this option, the usermod command removes the user from all other groups, leaving only the newly specified group.
-            -G: This option is followed by the name of the group to be added. Here, docker means adding the user to the docker group.
+    **`-aG`**:
+
+    **`-a`**: This option is short for "append", which means adding the user to the specified group without removing the user from other groups. Without this option, the usermod command removes the user from all other groups, leaving only the newly specified group.
+        
+    **`-G`**: This option is followed by the name of the group to be added. Here, docker means adding the user to the docker group.
     
-    $USER: is an environment variable representing the name of the currently logged in user. When this command is executed, $USER will be replaced with the name of the current user, thus adding the current user to the docker group.
+    **`$USER`**: is an environment variable representing the name of the currently logged in user. When this command is executed, $USER will be replaced with the name of the current user, thus adding the current user to the docker group.
+    
     → Add the current user to the docker group so that the user can run Docker commands without sudo. Normally, only users belonging to the docker group can execute Docker commands without sudo, which avoids having to add sudo every time you run a Docker command. After executing this command, the user will need to log back in (log out and back in) for the group change to take effect, or the newgrp docker command can be used to make the change take effect immediately so that you can start using Docker commands without sudo.   
 
     ```bash

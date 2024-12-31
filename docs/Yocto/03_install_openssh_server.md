@@ -38,8 +38,8 @@ sudo apt install openssh-server
 ![](../img/03_03.png)
 
 ```bash
-sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.original  # 備份原本
-sudo chmod a-w /etc/ssh/sshd_config.original  # 對所有使用者取消該文件寫入權限
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.original  # Back up the original
+sudo chmod a-w /etc/ssh/sshd_config.original  # Revoke write permissions for the file for all users
 ```
 
 **Configure the SSH server**
@@ -55,13 +55,13 @@ sudo nano /etc/ssh/sshd_config
 
 ```bash
 # PermitRootLogin prohibit-password → PermitRootLogin no
-默認設置（如果這行被註釋掉或設置為 PermitRootLogin yes）：允許 root 用戶通過 SSH 使用密碼登錄。
-其他設置：
-PermitRootLogin yes：允許 root 用戶通過 SSH 使用密碼登錄，這樣不太安全，通常不推薦這樣配置。
-PermitRootLogin no：完全禁止 root ****用戶通過 SSH 登錄，這樣會強迫系統管理員使用其他用戶（比如 sudo）來獲取 root 權限。
-PermitRootLogin prohibit-password**：允許 root 用戶通過 SSH 登錄，但禁止使用密碼登錄，只能使用 SSH 密鑰進行身份驗證。
+Default setting (if this line is commented out or set to PermitRootLogin yes): Allow root user to log in with a password via SSH.
+Other settings:
+PermitRootLogin yes: Allow the root user to log in using a password via SSH. This is not very secure and is generally not recommended.
+PermitRootLogin no: completely prohibit the root **** user from logging in through SSH, which will force the system administrator to use other users (such as sudo) to obtain root permissions.
+PermitRootLogin prohibit-password**: Allows the root user to log in via SSH, but prohibits login using a password and can only use SSH keys for authentication.
 
-# PasswordAuthentication yes → no  # 關閉「密碼」驗證
+# PasswordAuthentication yes → no  # Disable Password Verification
 ```
 
 **Check the configuration after changing it before restarting the server:**
@@ -70,9 +70,10 @@ PermitRootLogin prohibit-password**：允許 root 用戶通過 SSH 登錄，但�
 sudo sshd -t -f /etc/ssh/sshd_config
 ```
 
--t 參數是 test 的縮寫，用於檢查配置文件的語法。
--f 參數是 file 的縮寫，用於指定配置文件的路徑。
-一個用來檢查 SSH 配置文件語法正確性的命令，不會影響正在運行的 SSH 服務。確保修改後的配置文件不會導致 SSH 服務故障或無法登錄的有效手段。
+**`-t`** parameter is short for test and is used to check the syntax of the configuration file.
+
+**`-f`** parameter is the abbreviation of file and is used to specify the path to the configuration file.
+A command to check the syntax of the SSH configuration file without affecting the running SSH service. An effective way to ensure that the modified configuration file does not cause SSH service failure or inability to log in.
 
 **Restart the ssh service to pick up configuration changes:**
 
@@ -80,7 +81,7 @@ sudo sshd -t -f /etc/ssh/sshd_config
 sudo systemctl try-reload-or-restart ssh
 ```
 
-這個命令是用來重新加載或重啟 SSH 服務（通常是指 sshd 服務）的命令。
+This command is used to reload or restart the SSH service (usually refers to the sshd service).
 
 **import ssh key from github:**
 
@@ -88,8 +89,8 @@ sudo systemctl try-reload-or-restart ssh
 ssh-import-id-gh <github-username>
 ```
 
-繞道從GitHub取公鑰導入（也方便以後使用GitHub）
-import之後公鑰存入 **~/.ssh/authorized_keys** → 可以 **cat 瀏覽** or **nano 編輯**它
+Import the public key from GitHub (also convenient for using GitHub in the future)
+After importing, the public key is stored in **`~/.ssh/authorized_keys`** → you can **`cat`** browse or **`nano`** edit it
 
 ### Check the server ip address using **`ip a`**
 
