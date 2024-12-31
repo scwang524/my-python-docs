@@ -6,16 +6,16 @@ sidebar_position: 13
 **★Each time, input the commands as below before open Qt Creator.**
 
 ```bash
-**unset LD_LIBRARY_PATH
+unset LD_LIBRARY_PATH
 
-source /opt/poky/3.1.31/environment-setup-aarch64-poky-linux**
+source /opt/poky/3.1.31/environment-setup-aarch64-poky-linux
 ```
 
 ### Run Qtcreator ( Qt5.6.3 )
 
 ```bash
-**cd ~/Qt5.6.3/Tools/QtCreator/bin/
-./qtcreator**
+cd ~/Qt5.6.3/Tools/QtCreator/bin/
+./qtcreator
 ```
 
 ### Add Kit
@@ -31,7 +31,7 @@ source /opt/poky/3.1.31/environment-setup-aarch64-poky-linux**
 
 ```bash
 # Copy the files of build project to RZG2L（Yocto）
-**scp -r build-test3-RZG2L-Debug root@192.168.113.174:/home/root/work**
+scp -r build-test3-RZG2L-Debug root@192.168.113.174:/home/root/work
 ```
 
 ![](../img/q03_05.png)
@@ -59,11 +59,11 @@ If you run a Qt version different from the one of the previous time, it may lead
 
 **Qt Examples** are located at the directory as below, projects are in the sub-directories by category.
 
-**`<Qt Dir>/Examples/Qt-5.6.3/`**
+**<Qt Dir>/Examples/Qt-5.6.3/**
 
 The executable would be in another folder named as
 
-`/**build**-ex01-Desktop_Qt_5_6_3_GCC_64bit-Debug`
+/build-ex01-Desktop_Qt_5_6_3_GCC_64bit-Debug
 
 you can also double click on the executable to run it outside of Qt Creator.
 
@@ -88,7 +88,7 @@ The official **Qt Coffee Machine** Example:
 Modified version:
 
 ```bash
-**git clone https://github.com/yourskc/moil_coffee.git**
+git clone https://github.com/yourskc/moil_coffee.git
 ```
 
 ### **Reference:**

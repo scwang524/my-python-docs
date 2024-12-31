@@ -17,7 +17,7 @@ Add the GitHub repository:
 
 ```
 SRC_URI_append = " \
-**git://github.com/yourskc/gst-plugins-bad.git;branch=RCAR-GEN3e/1.16.3 \**
+git://github.com/yourskc/gst-plugins-bad.git;branch=RCAR-GEN3e/1.16.3 \
 ```
 
 Check commit ID:
@@ -25,13 +25,13 @@ Check commit ID:
 ```bash
 git log # 查看詳細的提交歷史和 commit ID
 git log --oneline  # 顯示簡短的 commit ID
-**git rev-parse HEAD  # 顯示當前分支的最新 commit ID**
+git rev-parse HEAD  # 顯示當前分支的最新 commit ID
 ```
 
 Insert the commit ID:
 
 ```
-SRCREV="**28ea2e113580be9d73d798ba58b82aa3ec62b92c**"
+SRCREV="28ea2e113580be9d73d798ba58b82aa3ec62b92c"
 ```
 
 ![](../img/g03_01.png)
@@ -39,31 +39,31 @@ SRCREV="**28ea2e113580be9d73d798ba58b82aa3ec62b92c**"
 Re-compile the Yocto image and write it to an SD card:
 
 ```bash
-**# dir: /workspaces/rzg/yocto/build**
-**MACHINE=smarc-rzg2l bitbake core-image-qt**
+# dir: /workspaces/rzg/yocto/build
+MACHINE=smarc-rzg2l bitbake core-image-qt
 ```
 
 ![](../img/g03_02.png)
 
 ```bash
-**# Write image to SD card
+# Write image to SD card
 cd build/tmp/deploy/images/smarc-rzg2l/
 # The output files of the build are** core-image-qt-smarc-rzg2l.wic.gz **&** core-image-qt-smarc-rzg2l.wic.bmap
 
-**# Exit the Docker container, insert SD card to the PC
-sudo fdisk -l       # check device ID of SD card** 
+# Exit the Docker container, insert SD card to the PC
+sudo fdisk -l       # check device ID of SD card
 ```
 
 ![](../img/g03_03.png)
 
 ```bash
-**# unmount partitions: suppose SD card mounted on /dev/sda1 & /dev/sda2
+# unmount partitions: suppose SD card mounted on /dev/sda1 & /dev/sda2
 umount /dev/sda1
 umount /dev/sda2
 
 sudo apt install bmap-tools
 # uses the bmaptool to copy a disk image file to the device /dev/sda
-sudo bmaptool copy core-image-qt-smarc-rzg2l.wic.gz /dev/sda**
+sudo bmaptool copy core-image-qt-smarc-rzg2l.wic.gz /dev/sda
 ```
 
 ![](../img/g03_04.png)

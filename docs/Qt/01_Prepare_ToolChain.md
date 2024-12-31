@@ -31,10 +31,10 @@ Now you can **run the script to install the toolchain** on your Ubuntu 22.04.
 
 ```bash
 # change the authority to **Permission/ Allow** **executing** file
-"chmod a+x <work_dir>/build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-qt-aarch64-smarc-rzg2l-toolchain-3.1.31.sh"
+chmod a+x <work_dir>/build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-qt-aarch64-smarc-rzg2l-toolchain-3.1.31.sh
 
 # run the script to install the toolchain on your Ubuntu 22.04.
-"sudo sh <work_dir>/build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-qt-aarch64-smarc-rzg2l-toolchain-3.1.31.sh"
+sudo sh <work_dir>/build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-qt-aarch64-smarc-rzg2l-toolchain-3.1.31.sh
 ```
 
 ![](../img/q01_01.png)

@@ -23,9 +23,6 @@ Download and install Qt from the below:
 
 ```bash
 ./qt-opensource-linux-x64-5.6.3.run
-
-**# 可安裝最新版(Optional)**
-**sudo apt install qtcreator**  #「**.config/QtProjec**t 資料夾」可複製改名(加QT版本別)
 ```
 
 當從遠端機器執行 GUI 應用程式時，它會在本地顯示。
@@ -51,11 +48,9 @@ The locations of Qt settings :
 **★Each time,  we need to set the environment variables before running Qt Creator. (∵設環境變數，之後才能 build Renesas版本)**
 
 ```bash
-**unset LD_LIBRARY_PATH
+unset LD_LIBRARY_PATH
 
-source /opt/poky/3.1.31/environment-setup-aarch64-poky-linux**
-**# source 可用 . 代替**
-**.** /opt/poky/3.1.31/environment-setup-aarch64-poky-linux
+source /opt/poky/3.1.31/environment-setup-aarch64-poky-linux
 ```
 
 **`LD_LIBRARY_PATH`** 是一個環境變數，用來**指定系統查找共享庫（shared libraries）的路徑**。在執行一個程式時，操作系統會使用這個變數來確定在哪些目錄中查找 `.so`（共享庫）文件。這樣，可以讓程式在執行時找到需要的動態庫。
@@ -78,8 +73,8 @@ echo $CC  # 原本什麼都沒有。如果有，表示當下已經 **cross compi
 ### Run Qtcreator ( Qt5.6.3 )
 
 ```bash
-**cd ~/Qt5.6.3/Tools/QtCreator/bin/
-./qtcreator**
+cd ~/Qt5.6.3/Tools/QtCreator/bin/
+./qtcreator
 ```
 
 ### **Start a new project**
@@ -119,19 +114,19 @@ Or choose from the Tabs on the upper tabs(Qt Version/ Compiler/ Debuggers/CMake 
 **Qt Kits Settings**
 
 ```
-      **Device** : Select the Device in the previous step,
+      Device : Select the Device in the previous step,
 
-     **Sysroot** : /opt/poky/3.1.31/sysroots/aarch64-poky-linux
+     Sysroot : /opt/poky/3.1.31/sysroots/aarch64-poky-linux
 
-  ***C Compiler*** : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
+  C Compiler : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
 
-**C++ Compiler** : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
+C++ Compiler : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
 
-    **Debugger** : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gdb
+    Debugger : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gdb
 
-  **Qt Version** : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/qt5/qmake
+  Qt Version : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/qt5/qmake
 
-       **cmake** : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/cmake
+       cmake : /opt/poky/3.1.31/sysroots/x86_64-pokysdk-linux/usr/bin/cmake
 ```
 
 ![](../img/q02_31.png)

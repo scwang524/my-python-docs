@@ -36,7 +36,7 @@ The important steps:
 for example, to get the control privilege of GPIO19
 
 ```
-**echo 19 > export**  # write into port number（wrong example because the GPIO port number doesn't exist）
+echo 19 > export  # write into port number（wrong example because the GPIO port number doesn't exist）
 ```
 
 ![](../img/gp01_02.png)

@@ -11,13 +11,11 @@ sidebar_position: 4
 ssh-keygen -t ed25519 -C "renesas-ssh-key"
 ```
 
-**-t** 是 **type** 的縮寫，用來指定 SSH 密鑰對的加密算法類型，比如 rsa、dsa、ecdsa、ed25519 等
+**-t** is the abbreviation of **type**, which is used to specify the encryption algorithm type of the SSH key pair, such as rsa, dsa, ecdsa, ed25519, etc.
 
-會在**用戶主目錄下「.ssh」**目錄中生成兩個文件：
-**id_ed25519**：**私鑰文件（private key）安全登錄**，應該妥善保管，並且不應與任何人共享。
-**id_ed25519.pub**：**公鑰文件（public key）身份驗證**，這是可以公開的，可以將它添加到遠程伺服器的 ~/.ssh/authorized_keys 文件中，來實現無密碼登錄。
+Two files will be generated in the ".ssh" directory under the **user's home directory: **id_ed25519**: **Private key file**  **for secure login**, should be kept properly and should not be shared with anyone. **id_ed25519.pub**: **Public key authentication**, which is publicly available and can be added to the remote server's ~/.ssh/authorized_keys file to enable password-free login.
 
-**-C** 用來為密鑰對提供一個**注釋（comment）**。這個注釋通常用來幫助識別這個密鑰對的用途或所有者。
+**-C** is used to provide a **comment** for the key pair. This comment is typically used to help identify the purpose or owner of this key pair.
 
 ![](../img/03_01.png)
 

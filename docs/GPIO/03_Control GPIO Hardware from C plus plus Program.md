@@ -61,7 +61,7 @@ cd rzgpio
 On **x86_64(Intel 64 bits cpu)**, we can use g++ to compile for debugging
 
 ```
-**g++** main.cpp rzgpio.cpp
+g++ main.cpp rzgpio.cpp
 ```
 
 ![](../img/gp03_03.png)
@@ -69,7 +69,7 @@ On **x86_64(Intel 64 bits cpu)**, we can use g++ to compile for debugging
 Finally, we'll compile a **aarch64 version** with the **cross compiler**
 
 ```
-**$CXX** main.cpp rzgpio.cpp
+$CXX main.cpp rzgpio.cpp
 ```
 
 ![](../img/gp03_04.png)

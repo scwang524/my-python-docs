@@ -7,8 +7,6 @@ sidebar_position: 14
 
 ![](../img/gp00_01.png)
 
-不同於之前教學內容偏軟體，這個可控制硬體。
-
 Tests and develop program to control the GPIO hardware pins of Renesas RZ/G2L under the Linux environment
 
 **Module Board** (upper)

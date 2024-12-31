@@ -29,7 +29,7 @@ Table 4-1 Example GPIO device nodes of RZ/G2L ( Page 16. in the above document)
 
 ```
 cd /sys/class/gpio
-**echo 460 > export**
+echo 460 > export
 ls -al
 ```
 
