@@ -166,4 +166,7 @@ const config = {
     }),
 };
 
-export default config;
+export default  {
+  markdown: {
+    format: 'detect',
+}
