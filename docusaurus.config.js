@@ -14,6 +14,10 @@ const config = {
   tagline: 'Edited by Stren',
   favicon: 'img/favicon.ico',
 
+  markdown: {
+    format: 'detect',
+  },
+
   // Set the production url of your site here
   url: 'https://scwang524.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -166,8 +170,4 @@ const config = {
     }),
 };
 
-export default  {
-  markdown: {
-    format: 'detect',
-  },
-};
+export default config;
