@@ -28,10 +28,9 @@ lsb_release -a
 
 # （Windows）
 
-### Install VSCode plugins of Remote Explorer / Remote Development
+### Install VSCode plugin of "Remote Development"
 
 ![](../img/05_25.png)
-![](../img/05_26.png)
 
 ### VSCode of Windows controls “docker engine” of Ubuntu remotely
 
