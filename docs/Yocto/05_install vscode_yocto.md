@@ -114,11 +114,11 @@ cd yocto
 tar zxvf ../RTK0EF0045Z13001ZJ-v1.2.2_EN/meta-rz-features_graphics_v1.2.2.tar.gz
 tar zxvf ../RTK0EF0045Z0021AZJ-v3.0.6-update3/rzg_vlp_v3.0.6.tar.gz
 tar zxvf ../RTK0EF0045Z15001ZJ-v1.2.2_EN/meta-rz-features_codec_v1.2.2.tar.gz
-解壓文件：
-	z：壓縮檔案是經過 gzip 壓縮的，因此需要解壓縮的檔案格式為 .gz 或 .tgz。
-	x 表示解壓（extract）。
-	v 表示顯示過程（verbose），可以看到解壓的文件列表。
-	f 表示指定文件。
+Unzip the files:
+	z: The compressed archive is compressed using gzip, so the archive format to be decompressed is .gz or .tgz.
+	x stands for extract.
+	v means display process (verbose), and you can see the list of decompressed files.
+	f indicates the specified file.
 
 ls -1
 ```
