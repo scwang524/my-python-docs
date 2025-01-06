@@ -64,10 +64,10 @@ cd work
 wget http://192.168.113.104/rz/orig/rzg/rzg.tar.gz
 tar zxvf rzg.tar.gz
 
-# Without this setting, an error occurs when **building procedure runs git command to apply patches
-git config --global --list
+# Without this setting, an error occurs when building procedure runs git command to apply patches
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+git config --global --list
 ```
 
 ![](../img/05_14.png)
