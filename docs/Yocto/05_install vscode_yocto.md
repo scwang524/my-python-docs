@@ -56,6 +56,8 @@ lsb_release -a
 
 ![](../img/05_13.png)
 
+![](../img/05_13_2.png)
+
 ```bash
 mkdir work
 cd work
