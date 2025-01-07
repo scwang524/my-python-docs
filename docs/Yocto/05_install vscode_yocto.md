@@ -61,7 +61,8 @@ lsb_release -a
 ```bash
 mkdir work
 cd work
-wget http://192.168.113.104/rz/orig/rzg/rzg.tar.gz
+(outdated) wget http://192.168.113.104/rz/orig/rzg/rzg.tar.gz
+(temp) wget https://moiltech-my.sharepoint.com/:u:/g/personal/oilmcut_moil_com_tw/EZD04WgHchBPu2VtVt2xybkBqNEgK0u0oMWg2xJAh2gIGw?e=rhhOG0
 tar zxvf rzg.tar.gz
 
 # Without this setting, an error occurs when building procedure runs git command to apply patches
@@ -75,6 +76,9 @@ git config --global --list
 ![](../img/05_15.png)
 
 ![](../img/05_16.png)
+
+### Start Docker of VSCode in Ubuntu
+![](../img/05_16_2.png)
 
 # （VSCode_Docker_Ubuntu）
 
