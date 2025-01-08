@@ -111,10 +111,6 @@ sudo apt install meson ninja-build
 Download 3 compressed files manually as below:
 https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EqX2ZqCjqM9DoDrK7yKFiNYBxMEJ2n8qRas-WMnOnccf_g?e=bainye
 and drag to designated folder in VSCode
-
-RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
-RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
-RTK0EF0045Z15001ZJ-v1.2.2_EN.zip
 ```
 ![](../img/05_17.png)
 
