@@ -101,8 +101,6 @@ libssl-dev bmap-tools
 # install some additional packages, such as Cmake and Meson
 sudo apt update
 sudo apt install software-properties-common
-# "apt-add-repository" command is part of "software-properties-common" package 
-sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
 sudo apt update
 sudo apt install cmake
 
