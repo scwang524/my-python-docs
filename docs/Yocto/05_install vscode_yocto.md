@@ -61,11 +61,11 @@ lsb_release -a
 ```bash
 mkdir work
 cd work
-Download "rzg.tar.gz" manually as below: 
-https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EhEzD2nR3odDm5IZrm1QczsBGnzX1oR_iYZ2Hu4Yzy1eKA?e=GwGdnw
-and drag to designated folder in VSCode
 ```
-![](../img/05_13_3.png)
+
+●Download "rzg.tar.gz" as below manually, and drag to current folder in VSCode.
+
+[rzg.tar.gz](../file/rzg.tar.gz)
 
 ```bash
 tar zxvf rzg.tar.gz
@@ -107,12 +107,14 @@ sudo apt install cmake
 sudo apt install meson ninja-build
 ```
 
-```bash
-Download 3 compressed files manually as below:
-https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EqX2ZqCjqM9DoDrK7yKFiNYBxMEJ2n8qRas-WMnOnccf_g?e=bainye
-and drag to designated folder in VSCode
-```
-![](../img/05_17.png)
+●Download 3 compressed files as below manually, and drag to current folder in VSCode.
+
+[RTK0EF0045Z13001ZJ-v1.2.2_EN.zip](../file/RTK0EF0045Z13001ZJ-v1.2.2_EN.zip)
+
+[RTK0EF0045Z0021AZJ-v3.0.6-update3.zip](../file/RTK0EF0045Z0021AZJ-v3.0.6-update3.zip)
+
+[RTK0EF0045Z15001ZJ-v1.2.2_EN.zip](../file/RTK0EF0045Z15001ZJ-v1.2.2_EN.zip)
+
 
 ```bash
 unzip RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
@@ -167,6 +169,7 @@ bitbake-layers add-layer ../meta-rz-features/meta-rz-codecs
 ![](../img/05_19.png)
 
 ```bash
+>> Optional because it depends on Internet Speed
 # dir: /workspaces/rzg/yocto/build
 wget http://192.168.113.104/rz/orig/rzg/downloads.tar.gz
 tar zxvf downloads.tar.gz
