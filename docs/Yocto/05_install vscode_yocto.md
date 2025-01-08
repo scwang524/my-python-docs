@@ -62,7 +62,11 @@ lsb_release -a
 mkdir work
 cd work
 (outdated) wget http://192.168.113.104/rz/orig/rzg/rzg.tar.gz
-(temp) wget https://moiltech-my.sharepoint.com/:u:/g/personal/oilmcut_moil_com_tw/EZD04WgHchBPu2VtVt2xybkBqNEgK0u0oMWg2xJAh2gIGw?e=rhhOG0
+(temp) Download manually and drag to designated folder in VSCode: (temp) Download manually and drag to designated folder in VSCode: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EhEzD2nR3odDm5IZrm1QczsBGnzX1oR_iYZ2Hu4Yzy1eKA?e=GwGdnw
+```
+![](../img/05_13_3.png)
+
+```bash
 tar zxvf rzg.tar.gz
 
 # Without this setting, an error occurs when building procedure runs git command to apply patches
@@ -102,16 +106,17 @@ sudo apt install cmake
 sudo apt install meson ninja-build
 ```
 
-![](../img/05_17.png)
-
 ```bash
 # The links below are temporary in Jimmy's computer
 (outdated)
 wget http://192.168.113.104/rz/orig/rzg/RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
 wget http://192.168.113.104/rz/orig/rzg/RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
 wget http://192.168.113.104/rz/orig/rzg/RTK0EF0045Z15001ZJ-v1.2.2_EN.zip
-(temp) Download manually: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EgvkCD8d0vdOtDF27Iab_bIBkHcscWA0jW911ndLY0PZwA?e=vSue6B
+(temp) Download manually and drag to designated folder in VSCode: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EqX2ZqCjqM9DoDrK7yKFiNYBxMEJ2n8qRas-WMnOnccf_g?e=bainye
+```
+![](../img/05_17.png)
 
+```bash
 unzip RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
 unzip RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
 unzip RTK0EF0045Z15001ZJ-v1.2.2_EN.zip
