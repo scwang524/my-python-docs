@@ -65,7 +65,9 @@ cd work
 
 ●Download "rzg.tar.gz" as below manually, and drag to current folder in VSCode.
 
-<a href="rzg.tar.gz" download>rzg.tar.gz</a>
+(★Please note that there is a MARK added after the name of the downloaded file. Remember to REMOVE it)
+
+[rzg.tar.gz](../file/rzg.tar.gz)
 
 ```bash
 tar zxvf rzg.tar.gz
@@ -109,11 +111,14 @@ sudo apt install meson ninja-build
 
 ●Download 3 compressed files as below manually, and drag to current folder in VSCode.
 
-<a href="RTK0EF0045Z13001ZJ-v1.2.2_EN.zip" download>RTK0EF0045Z13001ZJ-v1.2.2_EN.zip</a>
+(★Please note that there is a MARK added after the name of the downloaded file. Remember to REMOVE it)
 
-<a href="RTK0EF0045Z0021AZJ-v3.0.6-update3.zip.zip" download>RTK0EF0045Z0021AZJ-v3.0.6-update3.zip</a>
+[RTK0EF0045Z13001ZJ-v1.2.2_EN.zip](../file/RTK0EF0045Z13001ZJ-v1.2.2_EN.zip)
 
-<a href="RTK0EF0045Z15001ZJ-v1.2.2_EN.zip" download>RTK0EF0045Z15001ZJ-v1.2.2_EN.zip</a>
+[RTK0EF0045Z0021AZJ-v3.0.6-update3.zip](../file/RTK0EF0045Z0021AZJ-v3.0.6-update3.zip)
+
+[RTK0EF0045Z15001ZJ-v1.2.2_EN.zip](../file/RTK0EF0045Z15001ZJ-v1.2.2_EN.zip)
+
 
 ```bash
 unzip RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
