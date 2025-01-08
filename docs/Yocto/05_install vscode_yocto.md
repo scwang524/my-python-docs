@@ -61,7 +61,9 @@ lsb_release -a
 ```bash
 mkdir work
 cd work
-Download "rzg.tar.gz" manually and drag to designated folder in VSCode: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EhEzD2nR3odDm5IZrm1QczsBGnzX1oR_iYZ2Hu4Yzy1eKA?e=GwGdnw
+Download "rzg.tar.gz" manually as below: 
+https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EhEzD2nR3odDm5IZrm1QczsBGnzX1oR_iYZ2Hu4Yzy1eKA?e=GwGdnw
+and drag to designated folder in VSCode
 ```
 ![](../img/05_13_3.png)
 
@@ -106,11 +108,13 @@ sudo apt install meson ninja-build
 ```
 
 ```bash
-# The links below are temporary in Jimmy's computer
+Download 3 compressed files manually as below:
+https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EqX2ZqCjqM9DoDrK7yKFiNYBxMEJ2n8qRas-WMnOnccf_g?e=bainye
+and drag to designated folder in VSCode
+
 RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
 RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
 RTK0EF0045Z15001ZJ-v1.2.2_EN.zip
-Download 3 compressed files manually and drag to designated folder in VSCode: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EqX2ZqCjqM9DoDrK7yKFiNYBxMEJ2n8qRas-WMnOnccf_g?e=bainye
 ```
 ![](../img/05_17.png)
 
