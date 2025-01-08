@@ -106,9 +106,11 @@ sudo apt install meson ninja-build
 
 ```bash
 # The links below are temporary in Jimmy's computer
-wget [http://192.168.113.104/rz/RZG/Graphics%20Library/](http://192.168.113.104/rz/orig/rzg/)RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
-wget [http://192.168.113.104/rz/RZG/RZG%20Verified%20Linux%20Package/](http://192.168.113.104/rz/orig/rzg/)RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
-wget [http://192.168.113.104/rz/RZG/Video%20Codec%20Library/](http://192.168.113.104/rz/orig/rzg/)RTK0EF0045Z15001ZJ-v1.2.2_EN.zip
+(outdated)
+wget http://192.168.113.104/rz/orig/rzg/RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
+wget http://192.168.113.104/rz/orig/rzg/RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
+wget http://192.168.113.104/rz/orig/rzg/RTK0EF0045Z15001ZJ-v1.2.2_EN.zip
+(temp) Download manually: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EgvkCD8d0vdOtDF27Iab_bIBkHcscWA0jW911ndLY0PZwA?e=vSue6B
 
 unzip RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
 unzip RTK0EF0045Z0021AZJ-v3.0.6-update3.zip
