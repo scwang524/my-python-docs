@@ -62,7 +62,7 @@ lsb_release -a
 mkdir work
 cd work
 (outdated) wget http://192.168.113.104/rz/orig/rzg/rzg.tar.gz
-(temp) Download manually and drag to designated folder in VSCode: (temp) Download manually and drag to designated folder in VSCode: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EhEzD2nR3odDm5IZrm1QczsBGnzX1oR_iYZ2Hu4Yzy1eKA?e=GwGdnw
+(temp) Download manually and drag to designated folder in VSCode: https://moiltech-my.sharepoint.com/:f:/g/personal/oilmcut_moil_com_tw/EhEzD2nR3odDm5IZrm1QczsBGnzX1oR_iYZ2Hu4Yzy1eKA?e=GwGdnw
 ```
 ![](../img/05_13_3.png)
 
