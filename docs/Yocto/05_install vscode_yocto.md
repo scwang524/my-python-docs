@@ -66,6 +66,7 @@ cd work
 ●Download "rzg.tar.gz" as below manually, and drag to current folder in VSCode.
 
 [rzg.tar.gz](../file/rzg.tar.gz)
+<a href="../file/rzg.tar.gz" download>rzg.tar.gz</a>
 
 ```bash
 tar zxvf rzg.tar.gz
@@ -110,11 +111,13 @@ sudo apt install meson ninja-build
 ●Download 3 compressed files as below manually, and drag to current folder in VSCode.
 
 [RTK0EF0045Z13001ZJ-v1.2.2_EN.zip](../file/RTK0EF0045Z13001ZJ-v1.2.2_EN.zip)
+<a href="../file/RTK0EF0045Z13001ZJ-v1.2.2_EN.zip" download>RTK0EF0045Z13001ZJ-v1.2.2_EN.zip</a>
 
 [RTK0EF0045Z0021AZJ-v3.0.6-update3.zip](../file/RTK0EF0045Z0021AZJ-v3.0.6-update3.zip)
+<a href="../file/RTK0EF0045Z0021AZJ-v3.0.6-update3.zip.zip" download>RTK0EF0045Z0021AZJ-v3.0.6-update3.zip</a>
 
 [RTK0EF0045Z15001ZJ-v1.2.2_EN.zip](../file/RTK0EF0045Z15001ZJ-v1.2.2_EN.zip)
-
+<a href="../file/RTK0EF0045Z15001ZJ-v1.2.2_EN.zip" download>RTK0EF0045Z15001ZJ-v1.2.2_EN.zip</a>
 
 ```bash
 unzip RTK0EF0045Z13001ZJ-v1.2.2_EN.zip
