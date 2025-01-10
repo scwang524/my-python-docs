@@ -193,9 +193,6 @@ nano conf/local.conf
 ```bash
 # dir: /workspaces/rzg/yocto/build
 MACHINE=smarc-rzg2l bitbake core-image-qt
-
-# build cross compiler installer (will use later)
-MACHINE=smarc-rzg2l bitbake core-image-qt -c populate_sdk
 ```
 
 ![](../img/05_21.png)
@@ -203,6 +200,7 @@ MACHINE=smarc-rzg2l bitbake core-image-qt -c populate_sdk
 # （Ubuntu）N200 PC
 
 ```bash
+# dir: ~/work/rzg/yocto
 # Write image to SD card
 cd build/tmp/deploy/images/smarc-rzg2l/
 # The output files of the build are** core-image-qt-smarc-rzg2l.wic.gz & core-image-qt-smarc-rzg2l.wic.bmap
@@ -220,7 +218,6 @@ umount /dev/sda2
 
 sudo apt install bmap-tools
 # uses the bmaptool to copy a disk image file to the device /dev/sda
-sudo bmaptool copy core-image-weston-smarc-rzg2l.wic.gz /dev/sda
 sudo bmaptool copy core-image-qt-smarc-rzg2l.wic.gz /dev/sda
 ```
 

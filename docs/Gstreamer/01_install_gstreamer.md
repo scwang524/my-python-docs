@@ -65,7 +65,7 @@ gst-inspect-1.0 circle
 ```bash
 gst-launch-1.0 videotestsrc ! autovideosink 
 
-gst-launch-1.0 videotestsrc **pattern=0** ! autovideosink
+gst-launch-1.0 videotestsrc pattern=0 ! autovideosink
 ```
 
 **pattern = 0 ~ 25**
@@ -124,7 +124,7 @@ ninja -C build
 Copy **`.so` files** to the library folder
 
 ```bash
-sudo cp ./build/gst/geometrictransform/**libgstgeometrictransform.so** /usr/lib/x86_64-linux-gnu/gstreamer-1.0
+sudo cp ./build/gst/geometrictransform/libgstgeometrictransform.so /usr/lib/x86_64-linux-gnu/gstreamer-1.0
 ```
 
 ### Or copy the existing built **`.so` files (Optional)**
