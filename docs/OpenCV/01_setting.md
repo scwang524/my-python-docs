@@ -78,10 +78,10 @@ curl https://raw.githubusercontent.com/tensorflow/tensorflow/refs/heads/master/t
 
 #★edit content
 vi label_image.py   
-**# Insert the line**
-**import tflite_runtime.interpreter as tflite
+# Insert the line
+import tflite_runtime.interpreter as tflite
 # Modify the word**
-interpreter = **tflite**.Interpreter(model_path=args.model_file)
+interpreter = tflite.Interpreter(model_path=args.model_file)
 ```
 
 ```bash
@@ -133,13 +133,13 @@ https://github.com/ARM-software/armnn/blob/branches/armnn_25_02/delegate/Delegat
 cd ..
 #★edit content
 vi label_image.py  
-**# Insert codes as the above link of github repo** 
+# Insert codes as the above link of github repo
 armnn_delegate = tflite.load_delegate( library="<path-to-armnn-binaries>/libarmnnDelegate.so",
                                        options={"backends": "CpuAcc,GpuAcc,CpuRef", "logging-severity":"info"})
-**# Modify the word**                                      
+# Modify the word                                 
 interpreter = tflite.Interpreter(
     model_path=args.model_file,
-    experimental_delegates=[**armnn_delegate**],
+    experimental_delegates=[armnn_delegate],
     num_threads=args.num_threads)                        
 ```
 
